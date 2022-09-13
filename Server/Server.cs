@@ -23,8 +23,7 @@ namespace Server
 
             SocketServer.Start();
 
-            Thread pollingThread = new Thread(PollingTask);
-            pollingThread.Start();
+            
             while (true)
             {
                 Console.WriteLine("0.GetClientList\r\n1.Get Current Status\r\n997.Exit\r\n998.Restrat all client\r\n999.Close all client");
